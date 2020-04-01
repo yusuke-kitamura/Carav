@@ -1,13 +1,10 @@
 class BlogsController < ApplicationController
-  def index
-  end
-
   def show
   end
 
   def index
-  	# 生地全体を取得
-  	@blogs = Blog.all
+    # 記事を全件取得
+    @blogs = Blog.all
   end
 
   def new
